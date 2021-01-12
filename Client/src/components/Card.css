@@ -1,0 +1,35 @@
+.stats-container {
+  background:linear-gradient(to right, rgb(24, 12, 78), rgba(71, 71, 71));
+  background-size: cover;
+  color: white;
+}
+
+.stats-container a{
+  text-decoration: none;
+}
+
+.stats-container, .monster-name{
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.stats-container, .monster-name{
+  position: relative;
+  min-height: 200px;
+  transition: width 0.3s, min-height 0.3s;
+}
+.stats-container:hover{
+  width: 310px;
+  min-height: 205px;
+}
+
+.monster-name{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.monster-name:hover{
+  opacity: 1;
+}

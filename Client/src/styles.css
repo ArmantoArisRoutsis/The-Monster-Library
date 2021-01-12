@@ -1,0 +1,209 @@
+/* CSS variables */
+
+:root {
+  --orange: rgb(255, 166, 0,0);
+  --dark-blue: rgb(66, 97, 138);
+  --white: #ffffff;
+}
+
+/* Body background */
+body{
+  background:linear-gradient(0deg, rgba(71, 71, 71, 0.5), rgba(71, 71, 71, 0.4)), url("/Images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* level form related */
+.level-btn, .level-input, .monster-input{
+  height: 50px;
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-color: var(--dark-blue);
+  border-radius: 5px;
+}
+
+.name-input, .image-input{
+  display: block;
+  height: 50px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  border-color: var(--dark-blue);
+  border-radius: 5px;
+}
+
+.level-container, .monster-container-card{
+  background-color: var(--orange);
+  width: 400px;
+  padding: 70px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.level-title{
+  color: var(--white);
+  font-family: 'Langar',cursive;
+  font-size: 4rem;
+}
+.level-sub-title{
+  outline-style:dashed ;
+  color: var(--white);
+}
+.level-input{
+  width: 30%;
+}
+
+.monster-input {
+  width: 56%;
+}
+
+.level-btn{
+  display: block;
+  width: 95%;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  transition: background-color 0.3s;
+}
+
+.level-btn:hover, .new-monster:hover {
+  background-color: rgb(35, 35, 51);
+  color: var(--white);
+}
+
+
+/* Monster display related */
+.monster-container-card, .monster-container-card h1{
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 15px;
+}
+.monster-container-card{
+  width: 50%;
+  padding: 0px 0px 30px 0px;
+}
+
+.new-monster{
+  padding: 0px 10px;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--dark-blue) ;
+  border-radius: 5px;
+  height: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* error styling */
+.error{
+  /* padding: 3px; */
+  /* background-color: rgba(255, 255, 255); */
+  color: red;
+}
+
+/* Create Button */
+.create-button{
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  background-color: rgb(81, 65, 173);
+  color: #ffffff;
+  height: 90px;
+  width: 90px;
+  font-size: 82px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: width 0.5s, height 0.5s, font-size 0.5s, background-color 0.5s, border-radius 0.5s;
+  padding: 10px;
+  box-shadow: 1px 1px 10px 5px #ffffff;
+
+}
+
+.view-all, .create-new{
+  display: none;
+  font-size: 10px;
+}
+
+.view-all:hover, .create-new:hover{
+  display: block;
+}
+
+
+.create-button:hover {
+  background-color: rgb(59, 46, 131);
+  color: #ffffff;
+  height: 100px;
+  width: 100px;
+  font-size: 90px;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  grid-row-gap: 20px
+}
+
+.gallery a{
+  text-decoration: none;
+  width: 330px;
+  margin: 0 auto;
+}
+
+.category-container{
+  color: #ffffff;
+}
+
+.category-btns button{
+  color: rgb(255, 255, 255);
+  background-color: rgb(53, 51, 51);
+  margin: 2px;
+  font-size: 1rem;
+  border: 1px solid rgb(255, 255, 255);
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  padding: 3px;
+}
+.category-btns button:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.category-btns{
+  margin-bottom: 50px;
+}
+.char-check{
+  margin-right: 20px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.image-preview{
+  height: 280px;
+  width: 370px;
+  object-fit: cover ;
+}
+
+
+
+@media only screen and (max-width: 995px) {
+
+  .create-button{
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    font-size: 65px;
+  }
+  .level-title{
+    font-size: 3rem;
+  }
+  .level-container{
+    padding: 10px;
+  }
+  
+}
